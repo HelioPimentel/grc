@@ -7,34 +7,33 @@
     <link rel="icon" href="hp.ico" />
     <link rel="stylesheet" href="bootstrap.min.css" />
     <style>
-        video { width: 100% }
+        body { padding: 20px; background-color: #FFFFF0; overflow-x: hidden }
+        h3 { font-weight: bold }
+        div { text-align: justify }
         a { text-decoration: none; color: blue; font-weight: bold }
-        .background { position: fixed; top: 0; left: 0; height: 100%; object-fit: cover; z-index: -1 }
-        #d { padding-bottom: 100px; display: none }
-        .div { width: 280px; border: 1px solid gray; background-color: #E0E0E0 }
+        video { width: 100% }
     </style>
 </head>
 <body>
+    <div class="row">
 
-    <video class="background" autoplay muted loop playsinline><source src="grc.mp4" type="video/mp4"></video>
-
-    <div class="d-flex justify-content-center align-items-center vh-100">
-        <div id="d">
-            <div class="div p-3">
-                Agora, qualquer empresa pode validar candidatos, analisar compradores ou monitorar fornecedores por menos de R$&nbsp;5,00.<br /><br />
-                O sistema <b>GRC MINI</b> usa as APIs da InfoSimples para obter automaticamente as certidões necessárias e gera um relatório consolidado dos resultados obtidos.<br /><br />
-                Consulte as <a target="_blank" href="https://infosimples.com/consultas/">APIs</a> disponíveis e entre em contato para personalizarmos o <b>GRC MINI</b> de acordo com as suas necessidades.<br /><br />
-                <table>
-                    <tr>
-                        <td style="width: 55px"><img style="width: 40px" src="whatsapp.png" /></td>
-                        <td>Hélio Pimentel<br /><a target="_blank" href="https://wa.me/5511967223580">+55 (11) 96722-3580</a><br /></td>
-                    </tr>
-                </table>
-            </div>
+        <div class="col-12 col-md-4 p-4">
+            <h3>GRC MINI</h3><br />
+            Qualquer empresa pode validar candidatos, analisar compradores ou monitorar fornecedores por menos de R$&nbsp;5,00.<br /><br />
+            O sistema <b>GRC MINI</b> usa as APIs da InfoSimples para obter automaticamente as certidões necessárias e gera um relatório consolidado dos resultados obtidos.<br /><br />
+            Consulte as APIs <a target="_blank" href="https://infosimples.com/consultas/">disponíveis</a> e entre em contato para personalizarmos o <b>GRC MINI</b> de acordo com as suas necessidades.<br /><br />
+            <table>
+                <tr>
+                    <td style="width: 55px"><img style="width: 40px" src="whatsapp.png" /></td>
+                    <td>Hélio Pimentel<br /><a target="_blank" href="https://wa.me/5511967223580">+55 (11) 96722-3580</a><br /></td>
+                </tr>
+            </table><br />
         </div>
-    </div>
 
+        <div class="col-12 col-md-8 p-4">
+            <video autoplay muted loop playsinline><source src="grc.mp4" type="video/mp4"></video>
+        </div>
+
+    </div>
 </body>
 </html>
-
-<script> setTimeout(function () { document.getElementById("d").style.display = "block"; }, 3000); </script>
